@@ -21,6 +21,11 @@
           <?php echo $page->post_title; ?>
       </a>
       </li>
+      <li class="nav-item active<?php if (is_page($page)) { echo 'active'; } ?>">
+        <a class="nav-link" href="<?php echo get_permalink($page);?>"><span class="sr-only">(current)</span>
+          <?php echo $page->post_title; ?>
+      </a>
+      </li>
         <?php endforeach;?>
     </ul>
   </div>
